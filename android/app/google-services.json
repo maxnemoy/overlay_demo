@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "840730679462",
+    "project_id": "overlay-284de",
+    "storage_bucket": "overlay-284de.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:840730679462:android:2a26bf403168e3799e3c67",
+        "android_client_info": {
+          "package_name": "com.maxnemoy.overlay_demo"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "840730679462-iqddt9l7nfarbn6ur9lqek5qdp6q09n3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCMCLcPJyOHWWPxI63K5jeeiP3Dw2wCc6o"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "840730679462-iqddt9l7nfarbn6ur9lqek5qdp6q09n3.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "840730679462-o8t5nkod3a0qu65tif4vrivdaqh2a7df.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.maxnemoy.overlayDemo"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
