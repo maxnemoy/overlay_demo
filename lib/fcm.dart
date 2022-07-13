@@ -1,9 +1,10 @@
 import 'dart:async';
 
-import 'package:firebase_core/firebase_core.dart';
+import 'package:firebase_core/firebase_core.dart' show Firebase;
 import 'package:firebase_messaging/firebase_messaging.dart';
 import 'package:flutter/foundation.dart';
 import 'package:overlay_demo/firebase_options.dart';
+import 'package:overlay_demo/overlay.dart';
 
 class FcmService {
   static Future<void> initFCM() async {
@@ -12,6 +13,7 @@ class FcmService {
     );
 
     FirebaseMessaging messaging = FirebaseMessaging.instance;
+    
     NotificationSettings settings = await messaging.requestPermission(
       alert: true,
       announcement: false,
@@ -46,5 +48,7 @@ class FcmService {
     await Firebase.initializeApp(
         options: DefaultFirebaseOptions.currentPlatform);
     debugPrint("Handling a background message: ${message.messageId}");
+    OverlayService overlay = OverlayService();
+    overlay.showOverlayWindow(message.data["some_title"], message.data["some_body"]);
   }
 }
