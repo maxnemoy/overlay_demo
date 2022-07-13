@@ -1,0 +1,9 @@
+{
+    "aps" : {
+       "alert" : {
+          "title" : "Some title",
+          "subtitle" : "Subtitle",
+          "body" : "Some body"
+       }
+    }
+ }

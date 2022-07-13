@@ -11,6 +11,7 @@ dependencies:
     sdk: flutter
   system_alert_window: ^1.1.1
   firebase_messaging: ^11.4.4
+  firebase_core: ^1.19.1
 
 dev_dependencies:
   flutter_test:
@@ -22,6 +23,8 @@ flutter:
 
 scripts:
   win: flutter run -d windows
-  device: flutter run -d R58M56CMENJ
-  android: flutter run -d emulator-5554 
+  android: flutter run -d R58M56CMENJ
+  emulator: flutter run -d emulator-5554 
+  simulator: flutter run -d EEE0BA14-A610-4E68-B487-1DA88BF1271B
   rebuild: pub run build_runner build --delete-conflicting-outputs
+  push: xcrun simctl push booted com.maxnemoy.overlayDemo push/push.json
